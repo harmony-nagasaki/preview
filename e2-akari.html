@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>案E2 あかり・フル版（夕暮れに窓の灯りがともる）｜株式会社Harmony 新規事業所</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2F5D46; --green-deep:#1E3F2F; --green-dark:#142B20; --moss:#6B8F6B;
+  --beige:#F4EFE6; --beige-deep:#E9E0D0; --kin:#B08D3E; --kin-light:#D4B96A;
+  --text:#37403A; --line:#DDD5C6; --white:#FCFAF5;
+  --shadow-sm:0 1px 2px rgba(30,63,47,.06),0 4px 12px rgba(30,63,47,.08);
+  --shadow-md:0 2px 4px rgba(30,63,47,.06),0 14px 34px rgba(30,63,47,.14);
+  --shadow-lg:0 4px 8px rgba(30,63,47,.08),0 24px 56px rgba(30,63,47,.20);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--text);line-height:1.95;letter-spacing:.02em;font-size:15px;
+  background:linear-gradient(180deg,#FDFBF6 0%,#F7F2E8 100%)}
+a{color:var(--green)}
+.inner{max-width:1100px;margin:0 auto;padding:0 24px}
+.badge-label{position:fixed;bottom:14px;left:14px;background:rgba(20,43,32,.9);color:#fff;font-size:11.5px;padding:6px 16px;z-index:999;border-radius:999px;box-shadow:var(--shadow-md);backdrop-filter:blur(4px)}
+.page{display:none}.page.active{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* header */
+header{background:rgba(252,250,245,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(221,213,198,.6);position:sticky;top:0;z-index:100;box-shadow:0 4px 24px rgba(30,63,47,.06)}
+.h-inner{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{text-decoration:none}
+.logo b{font-family:"Shippori Mincho",serif;font-weight:800;font-size:17px;color:var(--green-deep);line-height:1.35;display:block}
+.logo small{display:block;font-size:10px;font-weight:500;color:var(--kin);letter-spacing:.12em}
+nav ul{display:flex;gap:24px;list-style:none;font-size:13.5px;font-weight:500;align-items:center}
+nav a{color:var(--text);text-decoration:none;transition:.2s}
+nav a:hover{color:var(--green)}
+nav a.current{color:var(--green);border-bottom:2px solid var(--kin);padding-bottom:2px}
+.h-cta{background:linear-gradient(135deg,var(--green) 0%,var(--green-deep) 100%);color:#fff !important;text-decoration:none;font-weight:700;font-size:13.5px;padding:11px 26px;border-radius:3px;white-space:nowrap;
+  box-shadow:0 6px 18px rgba(30,63,47,.35);transition:.2s}
+.h-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(30,63,47,.4)}
+#nav-toggle{display:none}
+.nav-btn{display:none;width:44px;height:44px;cursor:pointer;position:relative;flex-shrink:0;z-index:95}
+.nav-btn span{position:absolute;left:10px;width:24px;height:2px;background:var(--green-deep);transition:.25s}
+.nav-btn span:nth-child(1){top:14px}.nav-btn span:nth-child(2){top:21px}.nav-btn span:nth-child(3){top:28px}
+@media(max-width:900px){
+  .nav-btn{display:block}
+  nav{position:fixed;inset:0;background:linear-gradient(160deg,var(--green-deep),var(--green-dark));opacity:0;visibility:hidden;transition:.25s;z-index:90;display:flex;align-items:center;justify-content:center}
+  nav ul{flex-direction:column;gap:26px;font-size:17px;text-align:center}
+  nav a{color:#fff}
+  nav a.current{color:var(--kin-light);border-color:var(--kin-light)}
+  #nav-toggle:checked ~ nav{opacity:1;visibility:visible}
+  #nav-toggle:checked ~ .nav-btn span{background:#fff}
+  #nav-toggle:checked ~ .nav-btn span:nth-child(1){top:21px;transform:rotate(45deg)}
+  #nav-toggle:checked ~ .nav-btn span:nth-child(2){opacity:0}
+  #nav-toggle:checked ~ .nav-btn span:nth-child(3){top:21px;transform:rotate(-45deg)}
+  .h-cta.pc{display:none}
+}
+
+/* buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:16px 42px;font-size:15px;border-radius:3px;transition:.25s;text-align:center;position:relative}
+.btn-green{background:linear-gradient(135deg,var(--green) 0%,var(--green-deep) 100%);color:#fff;box-shadow:0 8px 22px rgba(30,63,47,.35)}
+.btn-green:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(30,63,47,.42)}
+.btn-kin{background:linear-gradient(135deg,var(--kin-light) 0%,var(--kin) 100%);color:#fff;box-shadow:0 8px 22px rgba(176,141,62,.4)}
+.btn-kin:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(176,141,62,.5)}
+.btn-frame{border:1px solid var(--green);color:var(--green);background:rgba(255,255,255,.6);backdrop-filter:blur(4px)}
+.btn-frame:hover{background:var(--green);color:#fff;transform:translateY(-3px);box-shadow:0 10px 24px rgba(30,63,47,.3)}
+.btn-frame-white{border:1px solid rgba(255,255,255,.7);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(4px)}
+.btn-frame-white:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
+
+/* hero */
+.hero{position:relative;padding:100px 24px 120px;overflow:hidden;
+  background:radial-gradient(ellipse 900px 500px at 85% -10%,rgba(176,141,62,.22) 0%,transparent 60%),
+             radial-gradient(ellipse 700px 480px at -10% 110%,rgba(47,93,70,.14) 0%,transparent 60%),
+             linear-gradient(180deg,var(--beige) 0%,#F0E9DB 100%)}
+.hero .ring{position:absolute;border-radius:50%;border:1px solid rgba(47,93,70,.25)}
+.r1{width:520px;height:520px;right:-160px;top:-160px}
+.r2{width:360px;height:360px;right:-80px;top:-80px;border-color:rgba(176,141,62,.35)}
+.r3{width:220px;height:220px;left:-90px;bottom:-90px;border-color:rgba(176,141,62,.3)}
+.hero .glow{position:absolute;width:340px;height:340px;border-radius:50%;right:6%;top:10%;
+  background:radial-gradient(circle,rgba(212,185,106,.35) 0%,transparent 70%);filter:blur(10px)}
+.hero .inner{position:relative}
+.open-line{display:inline-flex;align-items:center;gap:12px;font-size:13.5px;letter-spacing:.22em;color:var(--kin);font-weight:700;margin-bottom:28px;
+  background:rgba(255,255,255,.55);backdrop-filter:blur(6px);padding:10px 24px;border-radius:999px;box-shadow:var(--shadow-sm);border:1px solid rgba(176,141,62,.25)}
+.hero h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,5vw,50px);font-weight:700;line-height:1.65;color:var(--green-deep);
+  text-shadow:0 2px 24px rgba(252,250,245,.9)}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--kin) 20%,var(--kin-light) 60%,var(--kin) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .name{margin-top:28px;font-size:clamp(15px,2.2vw,19px);font-weight:700;color:var(--green-deep)}
+.hero .name small{display:block;font-size:12.5px;font-weight:400;color:var(--text);margin-top:8px;max-width:580px}
+.hero .cta-row{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+
+/* page hero */
+.page-hero{position:relative;color:#fff;padding:70px 24px;overflow:hidden;
+  background:radial-gradient(ellipse 700px 400px at 90% -20%,rgba(212,185,106,.28) 0%,transparent 55%),
+             linear-gradient(150deg,var(--green-deep) 0%,var(--green-dark) 100%)}
+.page-hero .ring{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.15)}
+.pr1{width:320px;height:320px;right:-100px;top:-130px}
+.pr2{width:190px;height:190px;right:70px;bottom:-100px;border-color:rgba(212,185,106,.4)}
+.page-hero .label{font-size:12px;letter-spacing:.3em;color:var(--kin-light);font-weight:700}
+.page-hero h1{font-family:"Shippori Mincho",serif;font-size:clamp(24px,3.8vw,38px);font-weight:700;margin-top:8px;text-shadow:0 4px 30px rgba(0,0,0,.3)}
+.page-hero p{font-size:13.5px;opacity:.92;margin-top:12px;max-width:640px}
+
+/* notice */
+.notice{max-width:900px;margin:-36px auto 0;position:relative;z-index:2;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+  border:1px solid rgba(221,213,198,.8);border-left:4px solid var(--kin);padding:18px 28px;font-size:13px;box-shadow:var(--shadow-md);border-radius:4px}
+.notice-flat{max-width:900px;margin:44px auto 0;background:#fff;border:1px solid var(--line);border-left:4px solid var(--kin);
+  padding:16px 26px;font-size:13px;box-shadow:var(--shadow-sm);border-radius:4px}
+
+/* sections */
+section{padding:88px 0}
+.sec-label{font-size:11.5px;letter-spacing:.3em;color:var(--kin);font-weight:700;text-align:center}
+.sec-title{font-family:"Shippori Mincho",serif;text-align:center;font-size:clamp(22px,3.2vw,32px);font-weight:700;color:var(--green-deep);margin:10px 0 54px;position:relative}
+.sec-title::after{content:"";display:block;width:56px;height:3px;margin:18px auto 0;border-radius:2px;
+  background:linear-gradient(90deg,var(--kin-light),var(--kin))}
+
+/* concept */
+.concept{background:linear-gradient(180deg,#FFFFFF 0%,#FBF8F1 100%);border-top:1px solid rgba(221,213,198,.5);border-bottom:1px solid rgba(221,213,198,.5);position:relative;overflow:hidden}
+.concept::before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;left:-200px;top:-200px;
+  background:radial-gradient(circle,rgba(176,141,62,.10) 0%,transparent 70%)}
+.concept-box{max-width:780px;margin:0 auto;text-align:center;position:relative}
+.concept-box .main-copy{font-family:"Shippori Mincho",serif;font-size:clamp(20px,3.4vw,31px);font-weight:700;color:var(--green-deep);line-height:2}
+.concept-box p{font-size:14.5px;margin-top:24px}
+.badge-open{display:inline-block;background:linear-gradient(135deg,var(--kin-light),var(--kin));color:#fff;font-weight:700;font-size:13px;padding:8px 26px;letter-spacing:.14em;margin-bottom:18px;border-radius:999px;box-shadow:0 6px 16px rgba(176,141,62,.35)}
+
+/* service cards */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:760px){.svc-grid{grid-template-columns:1fr}}
+.svc-card{background:#fff;border-radius:8px;padding:48px 40px;position:relative;display:flex;flex-direction:column;
+  box-shadow:var(--shadow-md);transition:.3s;border:1px solid rgba(221,213,198,.5);overflow:hidden}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.svc-card::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--green),var(--moss))}
+.svc-card.kids::before{background:linear-gradient(90deg,var(--kin),var(--kin-light))}
+.svc-card::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-90px;bottom:-90px;
+  background:radial-gradient(circle,rgba(47,93,70,.07) 0%,transparent 70%)}
+.svc-card.kids::after{background:radial-gradient(circle,rgba(176,141,62,.10) 0%,transparent 70%)}
+.svc-card .tag{font-size:12px;font-weight:700;color:var(--moss);letter-spacing:.14em}
+.svc-card.kids .tag{color:var(--kin)}
+.svc-card h3{font-family:"Shippori Mincho",serif;font-size:25px;color:var(--green-deep);margin:12px 0 14px}
+.svc-card p{font-size:14px;flex:1;position:relative;z-index:1}
+.svc-card .mini-spec{margin-top:18px;font-size:12.5px;background:linear-gradient(135deg,var(--beige),#F0E9DB);padding:14px 18px;line-height:1.8;border-radius:6px;box-shadow:inset 0 1px 3px rgba(30,63,47,.08)}
+.svc-card a.more{display:inline-block;margin-top:22px;color:var(--green);font-weight:700;font-size:13.5px;text-decoration:none;border-bottom:1px solid var(--green);padding-bottom:3px;align-self:flex-start;transition:.2s}
+.svc-card a.more:hover{color:var(--kin);border-color:var(--kin)}
+
+/* values */
+.values{background:linear-gradient(180deg,var(--beige) 0%,#EFE7D7 100%);position:relative;overflow:hidden}
+.values::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-260px;top:-260px;border:1px solid rgba(176,141,62,.2)}
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;position:relative}
+@media(max-width:900px){.val-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.val-grid{grid-template-columns:1fr}}
+.val-card{background:rgba(255,255,255,.92);backdrop-filter:blur(4px);border:1px solid rgba(221,213,198,.6);padding:34px 28px;border-radius:8px;
+  box-shadow:var(--shadow-sm);transition:.3s}
+.val-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.val-card .num{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.2em;font-weight:700;display:inline-block;
+  background:linear-gradient(120deg,var(--kin),var(--kin-light));-webkit-background-clip:text;background-clip:text;color:transparent}
+.val-card h4{font-family:"Shippori Mincho",serif;font-size:17.5px;font-weight:700;color:var(--green-deep);margin:8px 0 10px;line-height:1.6}
+.val-card p{font-size:13px}
+
+/* initiatives */
+.init{position:relative;color:#EFEAE0;overflow:hidden;
+  background:radial-gradient(ellipse 800px 500px at 15% -20%,rgba(176,141,62,.25) 0%,transparent 55%),
+             linear-gradient(160deg,var(--green-deep) 0%,var(--green-dark) 100%)}
+.init .sec-title{color:#fff}
+.init-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.init-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.init-grid{grid-template-columns:1fr}}
+.init-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:32px 28px;border-radius:8px;backdrop-filter:blur(4px);transition:.3s}
+.init-card:hover{background:rgba(255,255,255,.10);transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,.3)}
+.init-card h4{font-family:"Shippori Mincho",serif;font-size:16.5px;font-weight:700;color:#fff;margin-bottom:10px}
+.init-card h4 span{color:var(--kin-light);margin-right:10px;font-size:14px}
+.init-card p{font-size:13px;opacity:.88}
+
+/* spec table */
+.spec-table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;font-size:14px;border-radius:8px;overflow:hidden;box-shadow:var(--shadow-md)}
+.spec-table th,.spec-table td{padding:17px 22px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.spec-table tr:last-child th,.spec-table tr:last-child td{border-bottom:none}
+.spec-table th{width:200px;background:linear-gradient(135deg,var(--beige),#EFE7D7);font-family:"Shippori Mincho",serif;color:var(--green-deep);font-weight:700}
+@media(max-width:600px){.spec-table th,.spec-table td{display:block;width:100%}.spec-table th{padding:10px 18px}}
+
+/* act cards */
+.act-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+@media(max-width:900px){.act-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.act-grid{grid-template-columns:1fr}}
+.act-card{background:#fff;border:1px solid rgba(221,213,198,.6);padding:32px 26px;text-align:center;border-radius:8px;box-shadow:var(--shadow-sm);transition:.3s}
+.act-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.act-card .ic{width:68px;height:68px;border-radius:50%;background:linear-gradient(145deg,#FFFDF8,var(--beige-deep));display:flex;align-items:center;justify-content:center;
+  font-size:29px;margin:0 auto 16px;box-shadow:inset 0 -3px 8px rgba(176,141,62,.18),0 6px 14px rgba(30,63,47,.10)}
+.act-card h4{font-family:"Shippori Mincho",serif;font-size:16.5px;font-weight:700;color:var(--green-deep);margin-bottom:8px}
+.act-card p{font-size:13px;text-align:left}
+
+/* timeline */
+.timeline{max-width:680px;margin:0 auto;position:relative;padding-left:120px}
+.timeline::before{content:"";position:absolute;left:96px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--kin-light),var(--kin),var(--kin-light))}
+.tl-item{position:relative;padding:0 0 36px 30px}
+.tl-item::before{content:"";position:absolute;left:-5px;top:9px;width:12px;height:12px;border-radius:50%;
+  background:linear-gradient(135deg,var(--kin-light),var(--kin));box-shadow:0 0 0 4px rgba(176,141,62,.18)}
+.tl-item .time{position:absolute;left:-120px;top:2px;width:84px;text-align:right;font-family:"Shippori Mincho",serif;font-weight:700;color:var(--green-deep);font-size:15px}
+.tl-item h4{font-weight:700;font-size:15.5px;color:var(--green-deep)}
+.tl-item p{font-size:13px;margin-top:4px}
+@media(max-width:600px){
+  .timeline{padding-left:0}.timeline::before{left:5px}
+  .tl-item{padding-left:28px}.tl-item::before{left:0}
+  .tl-item .time{position:static;display:block;text-align:left;width:auto;margin-bottom:2px;color:var(--kin)}
+}
+
+/* flow */
+.flow{max-width:760px;margin:0 auto;counter-reset:flow}
+.flow-item{background:#fff;border:1px solid rgba(221,213,198,.6);padding:28px 32px 28px 100px;position:relative;margin-bottom:18px;border-radius:8px;box-shadow:var(--shadow-sm);transition:.3s}
+.flow-item:hover{box-shadow:var(--shadow-md)}
+.flow-item::before{counter-increment:flow;content:counter(flow,decimal-leading-zero);position:absolute;left:30px;top:50%;transform:translateY(-50%);
+  font-family:"Shippori Mincho",serif;font-size:27px;font-weight:700;
+  background:linear-gradient(135deg,var(--kin),var(--kin-light));-webkit-background-clip:text;background-clip:text;color:transparent}
+.flow-item h4{font-weight:700;font-size:16px;color:var(--green-deep)}
+.flow-item p{font-size:13.5px;margin-top:4px}
+.flow-item.noc{padding-left:32px}.flow-item.noc::before{content:none}
+@media(max-width:600px){.flow-item{padding:24px 24px 24px 76px}.flow-item::before{left:24px;font-size:23px}}
+
+/* trust */
+.trust{background:linear-gradient(180deg,var(--beige),#EFE7D7)}
+.trust-box{max-width:840px;margin:0 auto;text-align:center;background:rgba(255,255,255,.9);backdrop-filter:blur(4px);
+  padding:60px 44px;border-radius:12px;box-shadow:var(--shadow-md);border:1px solid rgba(221,213,198,.6)}
+.trust-box .rinen{font-family:"Shippori Mincho",serif;font-size:clamp(17px,2.6vw,23px);color:var(--green-deep);font-weight:700;margin-bottom:18px}
+.trust-box p{font-size:14.5px}
+.trust-box .company{margin-top:22px;font-weight:700;color:var(--green-deep)}
+
+/* contact band */
+.contact-band{text-align:center}
+.contact-band .tel{font-size:clamp(28px,5vw,42px);font-weight:900;color:var(--green-deep);letter-spacing:.05em;text-decoration:none;display:inline-block}
+.contact-band .tel small{display:block;font-size:13px;font-weight:400;margin-top:4px;color:var(--text)}
+.contact-band .cta-row{margin-top:30px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.sns-row{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.sns{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(221,213,198,.8);background:#fff;border-radius:999px;
+  padding:11px 28px;font-size:13.5px;font-weight:500;color:var(--green-deep);text-decoration:none;box-shadow:var(--shadow-sm);transition:.2s}
+.sns:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.sns .soon{font-size:10.5px;color:var(--kin)}
+
+/* access */
+.access-box{background:rgba(255,255,255,.9);padding:46px;max-width:680px;margin:0 auto;text-align:center;border-radius:12px;
+  box-shadow:var(--shadow-md);border:1px solid rgba(221,213,198,.6)}
+.access-box .place{font-family:"Shippori Mincho",serif;font-weight:700;font-size:17px;color:var(--green-deep)}
+
+/* cta banner */
+.cta-banner{position:relative;color:#fff;text-align:center;padding:72px 24px;overflow:hidden;
+  background:radial-gradient(ellipse 700px 400px at 80% 120%,rgba(212,185,106,.3) 0%,transparent 55%),
+             linear-gradient(140deg,var(--green) 0%,var(--green-deep) 100%)}
+.cta-banner h2{font-family:"Shippori Mincho",serif;font-size:clamp(20px,3vw,28px);font-weight:700;margin-bottom:14px;text-shadow:0 3px 20px rgba(0,0,0,.25)}
+.cta-banner p{font-size:14px;opacity:.94;margin-bottom:28px}
+.cta-banner .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* recruit */
+.job-list{max-width:820px;margin:0 auto}
+.job-item{background:#fff;border:1px solid rgba(221,213,198,.6);padding:28px 32px;margin-bottom:16px;display:flex;gap:20px;align-items:baseline;flex-wrap:wrap;
+  border-radius:8px;box-shadow:var(--shadow-sm);transition:.3s;border-left:4px solid var(--kin)}
+.job-item:hover{box-shadow:var(--shadow-md);transform:translateX(4px)}
+.job-item h4{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--green-deep);min-width:200px}
+.job-item p{font-size:13.5px;flex:1;min-width:240px}
+
+.center{text-align:center}.mt-40{margin-top:40px}
+
+/* footer */
+footer{background:linear-gradient(180deg,var(--green-deep),var(--green-dark));color:#CFC9BA;padding:56px 24px 32px;font-size:12.5px}
+.f-inner{max-width:1100px;margin:0 auto;text-align:center}
+.f-logo{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:6px}
+.f-sub{font-size:11px;letter-spacing:.1em;color:var(--kin-light);margin-bottom:22px}
+.f-nav{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.f-nav a{color:#EFEAE0;text-decoration:none;font-size:12.5px;transition:.2s}
+.f-nav a:hover{color:var(--kin-light)}
+footer a{color:var(--kin-light)}
+.copyright{opacity:.55;margin-top:16px}
+
+/* ---- スマホ幅：装飾リングが文字に重なるため非表示（光は残す） ---- */
+@media(max-width:700px){
+  .hero .ring,.page-hero .ring,.values::before{display:none}
+}
+/* ---- JS無効環境（スマホのファイルプレビュー等）でもページ切替を可能にする ---- */
+.page{scroll-margin-top:999px}
+.page:target{display:block;animation:fade .5s ease}
+body:has(.page:target) .page.active:not(:target){display:none}
+</style>
+<noscript><style>
+.nav-btn,#nav-toggle{display:none !important}
+.h-inner{flex-wrap:wrap;padding-bottom:10px}
+nav{position:static !important;opacity:1 !important;visibility:visible !important;background:none !important;display:block !important;width:100%;order:3}
+nav ul{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;width:100%;justify-content:space-between;align-items:center;gap:4px !important;font-size:clamp(11px,3.1vw,13.5px) !important;padding-top:10px;border-top:1px solid rgba(176,141,62,.3);overflow-x:auto;text-align:center}
+nav li{flex:1}
+nav a{color:var(--green-deep) !important;white-space:nowrap;letter-spacing:0;display:block;padding:2px 0;font-size:clamp(11px,3.1vw,13.5px) !important;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+</style></noscript>
+
+<style id="motion">
+/* ============ 案1-2 モーション演出 ============ */
+/* オープニング */
+.loader{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+  background:linear-gradient(160deg,#1E3F2F,#142B20);transition:opacity .9s ease,visibility .9s}
+html:not(.js) .loader{display:none}
+.loader.done{opacity:0;visibility:hidden}
+.loader .l-logo{font-family:"Shippori Mincho",serif;color:#F4EFE3;font-size:clamp(20px,4vw,34px);letter-spacing:.2em;opacity:0;animation:lfade 1.1s .15s forwards}
+.loader .l-line{width:0;height:1px;background:linear-gradient(90deg,transparent,#D4B96A,transparent);animation:lline 1.3s .35s forwards}
+.loader .l-sub{color:#C9B078;font-size:11px;letter-spacing:.4em;opacity:0;animation:lfade 1.1s .7s forwards}
+@keyframes lfade{to{opacity:1}}
+@keyframes lline{to{width:min(340px,64vw)}}
+/* 紙の質感 */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;opacity:.045;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.6'/></svg>")}
+/* 進捗バー */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--kin),var(--kin-light));z-index:300}
+/* スクロール出現 */
+.js .rv{opacity:0;transform:translateY(30px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js .sec-title::after{transform:scaleX(0);transition:transform 1.1s cubic-bezier(.16,1,.3,1) .3s}
+.js .sec-title.in::after{transform:scaleX(1)}
+/* ヒーロー文字の立ち上がり */
+.js .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.55em) rotate(3deg);animation:chin .85s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes chin{to{opacity:1;transform:none}}
+.js .hero h1 em{background:none;-webkit-background-clip:initial;background-clip:initial;color:var(--kin)}
+.js .hero .open-line,.js .hero .name,.js .hero .cta-row{opacity:0;animation:heroup 1s cubic-bezier(.16,1,.3,1) forwards}
+.js .hero .open-line{animation-delay:.9s}
+.js .hero .name{animation-delay:2.4s}
+.js .hero .cta-row{animation-delay:2.7s}
+@keyframes heroup{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+/* リングの呼吸・光のゆらぎ */
+.hero .ring{animation:ringp 11s ease-in-out infinite alternate}
+.hero .r2{animation-duration:14s}
+.hero .r3{animation-duration:9s}
+@keyframes ringp{from{transform:scale(1)}to{transform:scale(1.07)}}
+.hero .glow{animation:glowp 7s ease-in-out infinite alternate}
+@keyframes glowp{from{opacity:.75;filter:blur(10px)}to{opacity:1;filter:blur(16px)}}
+.hero .dust{position:absolute;inset:0;pointer-events:none}
+/* キーワードの帯 */
+.marquee{overflow:hidden;border-top:1px solid rgba(176,141,62,.28);border-bottom:1px solid rgba(176,141,62,.28);
+  background:rgba(255,255,255,.45);padding:16px 0;backdrop-filter:blur(4px)}
+.marquee .track{display:flex;white-space:nowrap;animation:mq 36s linear infinite;width:max-content}
+.marquee span{font-family:"Shippori Mincho",serif;color:var(--green-deep);font-size:15px;letter-spacing:.22em;display:inline-flex;align-items:center}
+.marquee i{width:6px;height:6px;border-radius:50%;background:var(--kin);display:inline-block;margin:0 30px;flex-shrink:0}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* ボタンの光沢スイープ */
+.btn{overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-90%;width:55%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .55s ease}
+.btn:hover::after{left:135%}
+/* ヘッダーの隠れ表示 */
+.js header{transition:transform .35s ease,background .3s}
+.js header.hid{transform:translateY(-100%)}
+/* ページ切替の演出強化 */
+.page.active{animation:fade .65s cubic-bezier(.16,1,.3,1)}
+/* 動きを減らす設定の尊重 */
+@media (prefers-reduced-motion:reduce){
+  .loader{display:none !important}
+  .js .rv,.js .hero .open-line,.js .hero .name,.js .hero .cta-row{opacity:1 !important;transform:none !important;animation:none !important}
+  .js .hero h1 .ch{opacity:1;animation:none;transform:none}
+  .marquee .track,.hero .ring,.hero .glow{animation:none}
+}
+</style>
+<style id="variant">
+
+.hero h1{color:#F2EDE0;text-shadow:0 4px 40px rgba(0,0,0,.35)}
+.hero h1 em{background:none;-webkit-background-clip:initial;background-clip:initial;color:#E3C880}
+.js .hero h1 em{color:#E3C880}
+.hero .name{color:#F2EDE0}
+.hero .name small{color:#C7CFC2}
+.open-line{background:rgba(255,255,255,.07);border:1px solid rgba(212,185,106,.45);color:#E3C880}
+.hero .btn-frame{border-color:rgba(255,255,255,.6);color:#F2EDE0;background:rgba(255,255,255,.05)}
+
+.hero{background:linear-gradient(180deg,#0C1412 0%,#14231D 50%,#2A2A22 82%,#4A3B26 100%)}
+.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:36%;pointer-events:none;
+  background:radial-gradient(ellipse 70% 100% at 50% 100%,rgba(240,180,100,.22) 0%,transparent 70%)}
+.hero::after{content:"";position:absolute;bottom:9%;left:50%;margin-left:-17px;width:34px;height:40px;border-radius:3px;
+  background:radial-gradient(circle at 50% 45%,#FFE9B8,#F0B464 75%);
+  box-shadow:0 0 36px 12px rgba(240,180,100,.5);animation:breathe2 4s ease-in-out infinite alternate}
+@keyframes breathe2{from{box-shadow:0 0 30px 8px rgba(240,180,100,.45)}to{box-shadow:0 0 50px 17px rgba(240,180,100,.65)}}
+.hero .ring{border-color:rgba(240,180,100,.22)}
+.hero .glow{background:radial-gradient(circle,rgba(240,180,100,.22) 0%,transparent 70%)}
+.hero .dust{filter:brightness(1.35)}
+.emo-line{font-family:"Shippori Mincho",serif;color:#E9D9A8;font-size:clamp(15px,2.4vw,20px);letter-spacing:.14em;margin:14px 0 6px}
+.js .emo-line{opacity:0;animation:heroup 1.2s cubic-bezier(.16,1,.3,1) forwards 1s}
+.page-hero{background:radial-gradient(ellipse 700px 400px at 90% -20%,rgba(240,180,100,.22) 0%,transparent 55%),
+  linear-gradient(150deg,#16241D,#0C1412)}
+.cta-banner{background:radial-gradient(ellipse 700px 400px at 50% 130%,rgba(240,180,100,.3) 0%,transparent 60%),
+  linear-gradient(160deg,#16241D,#0C1412)}
+
+</style>
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="l-logo">株式会社Harmony</div>
+  <div class="l-line"></div>
+  <div class="l-sub">2026.12.1 ─ NAMESHI, NAGASAKI</div>
+</div>
+<div class="badge-label">案E2 あかり・フル版（夕暮れに窓の灯りがともる）</div>
+
+<header>
+  <div class="h-inner">
+    <a class="logo" href="#home"><b>株式会社Harmony 新規事業所</b><small>生活介護・放課後等デイサービス｜名称は決定次第発表</small></a>
+    <input type="checkbox" id="nav-toggle">
+    <label class="nav-btn" for="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></label>
+    <nav><ul>
+      <li><a href="#seikatsu" data-nav>生活介護</a></li>
+      <li><a href="#day" data-nav>放課後等デイ</a></li>
+      <li><a href="#recruit" data-nav>採用情報</a></li>
+      <li><a href="#company" data-nav>会社概要</a></li>
+      <li><a href="#contact" data-nav>見学・ご相談</a></li>
+    </ul></nav>
+    <a class="h-cta pc" href="#contact">見学・ご相談</a>
+  </div>
+</header>
+
+<!-- ============ トップ ============ -->
+<article class="page active" id="home">
+  <div class="hero">
+    <i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i><i class="glow"></i>
+    <div class="inner">
+      <div class="open-line">2026年12月1日 開設予定｜長崎市滑石エリア</div>
+      <div class="emo-line">帰る場所が、もうひとつ、できる。</div>
+      <h1>障害があっても、<br><em>自分の人生</em>を選べる。</h1>
+      <div class="name">株式会社Harmony 新規事業所（名称は決定次第発表）
+        <small>重度障害者の訪問介護「ヘルパーステーションさとり」を運営する株式会社Harmonyが、生活介護と放課後等デイサービスの複合拠点を開設します。</small>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-green" href="#contact">見学・利用のご相談（無料）</a>
+        <a class="btn btn-frame" href="#recruit">採用情報</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice">現在、障害福祉サービス事業所としての指定申請の準備を進めています。掲載内容は準備中の情報であり、変更になる場合があります。事業所名称・所在地の詳細は決定次第お知らせします。</div>
+
+  
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>地域交流<i></i>工賃活動<i></i>医療的ケア<i></i>入浴支援<i></i>訪問介護との連携<i></i>AI・デジタル活用<i></i>2026.12.1 OPEN<i></i></span><span>地域交流<i></i>工賃活動<i></i>医療的ケア<i></i>入浴支援<i></i>訪問介護との連携<i></i>AI・デジタル活用<i></i>2026.12.1 OPEN<i></i></span>
+  </div></div>
+
+<section class="concept">
+    <div class="inner">
+      <div class="sec-label">CONCEPT</div>
+      <h2 class="sec-title">どんな人生を、一緒につくるか。</h2>
+      <div class="concept-box">
+        <p class="main-copy">私たちは、支援を受けるだけの<br>場所ではありません。</p>
+        <p>「できること」を増やし、「やってみたい」を応援し、一人ひとりが自分らしい人生を歩めるようサポートします。生活介護・放課後等デイサービスを通して、地域とのつながり、仕事の楽しさ、人との出会い、挑戦する喜びを大切にしています。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">SERVICE</div>
+      <h2 class="sec-title">提供予定のサービス</h2>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <span class="tag">生活介護｜18歳以上の方</span>
+          <h3>できることを、増やしていく。</h3>
+          <p>安心して過ごせる場所であることはもちろん、その先の人生も大切に。「できないこと」を支えるだけではなく、「できること」「挑戦したいこと」を一緒に増やしていく生活介護を目指します。</p>
+          <div class="mini-spec">定員10名｜主に障害支援区分5・6の方｜9:30〜16:30｜送迎あり（長崎市近郊）</div>
+          <a class="more" href="#seikatsu">サービス詳細を見る</a>
+        </div>
+        <div class="svc-card kids">
+          <span class="tag">放課後等デイサービス｜小1〜高3</span>
+          <h3>「今」を楽しみ、「将来」につなげる。</h3>
+          <p>子どもたちの「今」を楽しみながら、「将来」につながる経験を。自分で考え、自分で選び、自信を持って社会へ羽ばたけるよう、看護師のいる環境で重症心身障害のあるお子さまを支援します。</p>
+          <div class="mini-spec">定員7名｜重症心身障害のあるお子さま｜平日放課後・長期休暇｜送迎あり（長崎市近郊）</div>
+          <a class="more" href="#day">サービス詳細を見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="inner">
+      <div class="sec-label">VALUES</div>
+      <h2 class="sec-title">Harmonyが大切にする、6つのこと</h2>
+      <div class="val-grid">
+        <div class="val-card"><div class="num">壱</div><h4>一人ひとりの「やりたい」を大切に</h4><p>決められた毎日ではなく、一人ひとりの目標や興味に合わせた活動を行います。「やってみたい」を「できた」に変えていきます。</p></div>
+        <div class="val-card"><div class="num">弐</div><h4>地域とのつながり</h4><p>施設の中だけで完結しません。地域イベントへの参加や交流活動を通して、利用者さんも地域の一員として活躍できる場所をつくります。</p></div>
+        <div class="val-card"><div class="num">参</div><h4>工賃活動で「働く喜び」を</h4><p>「誰かに喜んでもらえる仕事」を大切に。AIを活用した作品づくり、オリジナルグッズ制作、地域イベントでの販売など、一人ひとりの得意を仕事につなげます。</p></div>
+        <div class="val-card"><div class="num">四</div><h4>医療的ケア・重度障害にも安心</h4><p>看護師が在籍し、医療的ケアが必要な方も安心して過ごせる環境を整えます。重度障害があっても、挑戦や社会参加を諦める必要はありません。</p></div>
+        <div class="val-card"><div class="num">五</div><h4>毎日をもっと楽しく</h4><p>季節イベント、外出、買い物、お祭り、創作活動、音楽、運動。様々な体験を通して、「今日は何をするのか」が楽しみになる毎日を届けます。</p></div>
+        <div class="val-card"><div class="num">六</div><h4>ご家族にも安心を</h4><p>日々の様子を丁寧に共有し、将来のことも一緒に考えながら、利用者さんとご家族に長く寄り添える存在を目指します。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="init">
+    <div class="inner">
+      <div class="sec-label">FEATURES</div>
+      <h2 class="sec-title">Harmonyらしい取り組み</h2>
+      <div class="init-grid">
+        <div class="init-card"><h4><span>―</span>地域交流</h4><p>地域イベント・バザー・季節行事・地域との共同企画に積極的に参加します。</p></div>
+        <div class="init-card"><h4><span>―</span>工賃活動</h4><p>AI作品、オリジナルグッズ、キッチンカー、ものづくり。「働く喜び」を形にします。</p></div>
+        <div class="init-card"><h4><span>―</span>医療的ケア対応</h4><p>看護師による支援体制で、医療的ケアが必要な方も安心してご利用いただけます。</p></div>
+        <div class="init-card"><h4><span>―</span>入浴支援</h4><p>ご自宅では難しい入浴もサポート。清潔と気持ちよさを日常に。</p></div>
+        <div class="init-card"><h4><span>―</span>訪問介護との連携</h4><p>同法人の訪問介護「さとり」と連携し、日中から在宅まで切れ目なく支えます。</p></div>
+        <div class="init-card"><h4><span>―</span>AI・デジタル活用</h4><p>創作活動や仕事づくりにAIを取り入れ、新しい可能性を広げます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="inner">
+      <div class="trust-box">
+        <div class="sec-label">COMPANY</div>
+        <h2 class="sec-title" style="margin-bottom:24px">運営会社</h2>
+        <p class="rinen">「障害者の方々が本当の自由を実現できる社会を築く」</p>
+        <p>この理念のもと、長崎市で重度障害者の訪問介護を行ってきた株式会社Harmonyが運営します。</p>
+        <p class="company">株式会社Harmony｜<a href="https://harmony.nagasaki.jp/" target="_blank" rel="noopener">ヘルパーステーションさとり（訪問介護）</a>｜<a href="#company">会社概要</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-band">
+    <div class="inner">
+      <div class="sec-label">CONTACT</div>
+      <h2 class="sec-title" style="margin-bottom:14px">見学・利用のご相談</h2>
+      <span class="badge-open">内覧会を2026年10月中旬に開催予定</span>
+      <p style="font-size:14px;margin-bottom:26px">開業前の見学予約・利用のご相談、関係機関からのお問い合わせを受付しています。</p>
+      <a class="tel" href="tel:095-848-8530">095-848-8530<small>開業準備中のため出られない場合があります。折り返しご連絡いたします。</small></a>
+      <div class="cta-row">
+        <a class="btn btn-green" href="#contact">ご相談方法を見る</a>
+        <a class="btn btn-frame" href="mailto:harmony20261201@gmail.com">メールで問い合わせる</a>
+      </div>
+      <div class="sns-row">
+        <a class="sns" href="#home">Instagram<span class="soon">（近日開設）</span></a>
+        <a class="sns" href="#home">LINEで相談<span class="soon">（近日開設）</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="inner">
+      <div class="sec-label">ACCESS</div>
+      <h2 class="sec-title">アクセス</h2>
+      <div class="access-box">
+        <p class="place">長崎市滑石エリアに開業予定</p>
+        <p style="font-size:13.5px;margin-top:8px">詳しい所在地は決定次第、当サイトでお知らせします。<br>送迎対応エリアは長崎市および近郊（時津町・長与町など）を予定しています。詳細はお問い合わせください。</p>
+      </div>
+    </div>
+  </section>
+</article>
+
+<!-- ============ 生活介護 ============ -->
+<article class="page" id="seikatsu">
+  <div class="page-hero">
+    <i class="ring pr1"></i><i class="ring pr2"></i>
+    <div class="inner">
+      <div class="label">SEIKATSU-KAIGO</div>
+      <h1>生活介護のご案内</h1>
+      <p>「できないこと」を支えるだけではなく、「できること」「挑戦したいこと」を一緒に増やしていく。18歳以上の方のための日中活動の場です。</p>
+    </div>
+  </div>
+  <div class="inner"><div class="notice-flat">現在、指定申請の準備を進めています。掲載内容は準備中の情報であり、変更になる場合があります。</div></div>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">THOUGHT</div>
+      <h2 class="sec-title">生活介護への想い</h2>
+      <div class="concept-box">
+        <p class="main-copy">安心して過ごせる場所の、<br>その先へ。</p>
+        <p>安心して過ごせる場所であることはもちろん、その先の人生も大切にします。一人ひとりの「やってみたい」に寄り添い、地域とのつながりや働く喜びを感じられる毎日をつくります。ご家族の休息（レスパイト）にもご活用ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values" style="padding-top:64px">
+    <div class="inner">
+      <div class="sec-label">OVERVIEW</div>
+      <h2 class="sec-title">サービス概要（予定）</h2>
+      <table class="spec-table">
+        <tr><th>対象となる方</th><td>18歳以上の方(主に障害支援区分5・6の方）。医療的ケアが必要な方もご相談ください。</td></tr>
+        <tr><th>定員</th><td>10名</td></tr>
+        <tr><th>サービス提供時間</th><td>9:30〜16:30</td></tr>
+        <tr><th>送迎</th><td>あり（長崎市および近郊。時津町・長与町などもご相談ください）。</td></tr>
+        <tr><th>医療的ケア</th><td>看護師が在籍予定。必要なケアの内容は個別にご相談ください。</td></tr>
+        <tr><th>ご利用料金</th><td>障害福祉サービスの法定利用料に基づきます（受給者証をお持ちの方。世帯収入に応じた負担上限額があります）。</td></tr>
+        <tr><th>所在地</th><td>長崎市滑石エリアに開業予定（詳細は決定次第お知らせします）</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">ACTIVITY</div>
+      <h2 class="sec-title">活動内容（予定）</h2>
+      <div class="act-grid">
+        <div class="act-card"><div class="ic">🎨</div><h4>創作活動</h4><p>アート・ものづくり・音楽など、一人ひとりの得意や興味に合わせた創作の時間。AIを活用した新しい作品づくりにも挑戦します。</p></div>
+        <div class="act-card"><div class="ic">💪</div><h4>機能訓練</h4><p>身体の状態に合わせた運動・訓練で、今ある力を維持し、できることを少しずつ広げていきます。</p></div>
+        <div class="act-card"><div class="ic">🛁</div><h4>入浴支援</h4><p>ご自宅では難しい入浴もサポート。清潔と気持ちよさを日常に届けます。</p></div>
+        <div class="act-card"><div class="ic">🚶</div><h4>外出活動</h4><p>買い物・お祭り・季節の行事など、地域に出かける機会を大切にします。</p></div>
+        <div class="act-card"><div class="ic">💼</div><h4>工賃のある作業活動</h4><p>オリジナルグッズ制作、地域イベントでの販売、キッチンカーなど、「誰かに喜んでもらえる仕事」を通して働く喜びと工賃を得られます。</p></div>
+        <div class="act-card"><div class="ic">🎉</div><h4>季節イベント</h4><p>お花見、夏祭り、クリスマス会など。「今日は何をするのか」が楽しみになる一年をつくります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="inner">
+      <div class="sec-label">SCHEDULE</div>
+      <h2 class="sec-title">1日の流れ（例）</h2>
+      <div class="timeline">
+        <div class="tl-item"><span class="time">9:30</span><h4>送迎・来所、健康チェック</h4><p>看護師・スタッフが体温や体調を確認し、一日を安心してスタートします。</p></div>
+        <div class="tl-item"><span class="time">10:00</span><h4>午前の活動</h4><p>創作活動・機能訓練・作業活動など、その日のプログラムへ。入浴支援もこの時間帯に行います。</p></div>
+        <div class="tl-item"><span class="time">12:00</span><h4>昼食・休憩</h4><p>ゆっくり食事をとり、午後に向けてひと休み。</p></div>
+        <div class="tl-item"><span class="time">13:30</span><h4>午後の活動</h4><p>外出活動やレクリエーション、作業活動の続きなど。</p></div>
+        <div class="tl-item"><span class="time">15:30</span><h4>ふりかえり・帰りの準備</h4><p>今日の様子を記録し、ご家族への共有を準備します。</p></div>
+        <div class="tl-item"><span class="time">16:30</span><h4>送迎・帰宅</h4><p>ご自宅までお送りします。</p></div>
+      </div>
+      <p class="center" style="font-size:12.5px;margin-top:24px">※プログラムは一例です。一人ひとりの支援計画に合わせて調整します。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">FLOW</div>
+      <h2 class="sec-title">ご利用までの流れ</h2>
+      <div class="flow">
+        <div class="flow-item"><h4>お問い合わせ・見学</h4><p>まずはお電話・メールでお気軽にご連絡ください。見学のご予約を承ります（内覧会は2026年10月中旬に開催予定）。</p></div>
+        <div class="flow-item"><h4>ご相談・体験</h4><p>ご本人の状況やご希望をお聞きし、サービス内容をご説明します。</p></div>
+        <div class="flow-item"><h4>受給者証の申請</h4><p>お住まいの市町村の窓口で「障害福祉サービス受給者証」を申請します。手続きについてもご案内しますので、お持ちでない方もご安心ください。</p></div>
+        <div class="flow-item"><h4>ご契約・利用開始</h4><p>個別支援計画を作成し、ご利用開始となります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>見学・利用のご相談を受付中です</h2>
+    <p>「うちの場合は利用できる？」「医療的ケアは対応できる？」など、どんなことでもお気軽にどうぞ。</p>
+    <div class="cta-row">
+      <a class="btn btn-kin" href="#contact">見学・利用のご相談</a>
+      <a class="btn btn-frame-white" href="tel:095-848-8530">095-848-8530</a>
+    </div>
+  </div>
+</article>
+
+<!-- ============ 放課後等デイ ============ -->
+<article class="page" id="day">
+  <div class="page-hero">
+    <i class="ring pr1"></i><i class="ring pr2"></i>
+    <div class="inner">
+      <div class="label">HOUKAGO DAY SERVICE</div>
+      <h1>放課後等デイサービスのご案内</h1>
+      <p>子どもたちの「今」を楽しみながら、「将来」につながる経験を。看護師のいる環境で、重症心身障害のあるお子さまの放課後を支えます。</p>
+    </div>
+  </div>
+  <div class="inner"><div class="notice-flat">現在、指定申請の準備を進めています。掲載内容は準備中の情報であり、変更になる場合があります。</div></div>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">THOUGHT</div>
+      <h2 class="sec-title">放課後等デイサービスへの想い</h2>
+      <div class="concept-box">
+        <p class="main-copy">遊びも学びも生活も、<br>すべてが成長につながる。</p>
+        <p>自分で考え、自分で選び、自信を持って社会へ羽ばたけるように。医療的ケアが必要なお子さまも、重い障害のあるお子さまも、「楽しい放課後」と「将来につながる経験」を諦めなくていい場所をつくります。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values" style="padding-top:64px">
+    <div class="inner">
+      <div class="sec-label">OVERVIEW</div>
+      <h2 class="sec-title">サービス概要（予定）</h2>
+      <table class="spec-table">
+        <tr><th>対象となるお子さま</th><td>小学1年生〜高校3年生。主に重症心身障害のあるお子さま。医療的ケアが必要なお子さまもご相談ください。</td></tr>
+        <tr><th>定員</th><td>7名</td></tr>
+        <tr><th>サービス提供日</th><td>平日の放課後／長期休暇中の平日／祝日（月〜金）</td></tr>
+        <tr><th>送迎</th><td>あり（長崎市および近郊。時津町・長与町などもご相談ください）。学校・ご自宅への送迎に対応予定です。</td></tr>
+        <tr><th>医療的ケア</th><td>看護師が在籍予定。経管栄養・吸引など、必要なケアは個別にご相談ください。</td></tr>
+        <tr><th>入浴支援</th><td>あり。ご自宅では難しい入浴もサポートします。</td></tr>
+        <tr><th>ご利用料金</th><td>障害児通所支援の法定利用料に基づきます（受給者証をお持ちの方。世帯収入に応じた負担上限額があります）。</td></tr>
+        <tr><th>所在地</th><td>長崎市滑石エリアに開業予定（詳細は決定次第お知らせします）</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">SUPPORT</div>
+      <h2 class="sec-title">支援の特色（予定）</h2>
+      <div class="act-grid">
+        <div class="act-card"><div class="ic">🌱</div><h4>個別療育</h4><p>お子さま一人ひとりの発達や特性に合わせた個別支援計画を作成し、その子のペースで「できた」を積み重ねます。</p></div>
+        <div class="act-card"><div class="ic">👫</div><h4>集団活動</h4><p>お友だちとの遊びや活動を通して、人と関わる楽しさと社会性を育みます。</p></div>
+        <div class="act-card"><div class="ic">🩺</div><h4>医療的ケア</h4><p>看護師が常駐予定。医療的ケアが必要なお子さまも、安心して放課後の時間を過ごせます。</p></div>
+        <div class="act-card"><div class="ic">🛁</div><h4>入浴支援</h4><p>ご自宅での入浴が難しいお子さまへ、安全に配慮した入浴支援を行います。</p></div>
+        <div class="act-card"><div class="ic">🚌</div><h4>外出・季節の体験</h4><p>公園への外出や季節のイベントなど、教室の外での体験も大切にします。</p></div>
+        <div class="act-card"><div class="ic">👨‍👩‍👧</div><h4>ご家族との連携</h4><p>日々の様子を丁寧に共有し、学校・ご家庭と連携しながら、将来のことも一緒に考えます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="inner">
+      <div class="sec-label">SCHEDULE</div>
+      <h2 class="sec-title">1日の流れ（例：平日放課後）</h2>
+      <div class="timeline">
+        <div class="tl-item"><span class="time">放課後</span><h4>学校へお迎え</h4><p>スタッフが学校までお迎えに行きます。</p></div>
+        <div class="tl-item"><span class="time">到着後</span><h4>健康チェック・ひと休み</h4><p>看護師・スタッフが体調を確認し、ゆったり過ごします。</p></div>
+        <div class="tl-item"><span class="time">〜夕方</span><h4>個別療育・集団活動</h4><p>その子の支援計画に沿った活動や、お友だちとの遊び。入浴支援もこの時間帯に行います。</p></div>
+        <div class="tl-item"><span class="time">帰宅前</span><h4>帰りの準備・記録</h4><p>今日の様子を記録し、ご家族へお伝えする準備をします。</p></div>
+        <div class="tl-item"><span class="time">夕方</span><h4>ご自宅へお送り</h4><p>ご自宅までお送りし、その日の様子をご家族に共有します。</p></div>
+      </div>
+      <p class="center" style="font-size:12.5px;margin-top:24px">※プログラムは一例です。長期休暇中は午前からの受け入れを予定しています。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">FLOW</div>
+      <h2 class="sec-title">ご利用までの流れ</h2>
+      <div class="flow">
+        <div class="flow-item"><h4>お問い合わせ・見学</h4><p>まずはお電話・メールでお気軽にご連絡ください。見学のご予約を承ります（内覧会は2026年10月中旬に開催予定）。</p></div>
+        <div class="flow-item"><h4>ご相談・体験</h4><p>お子さまの状況やご希望をお聞きし、サービス内容をご説明します。</p></div>
+        <div class="flow-item"><h4>受給者証の申請</h4><p>お住まいの市町村の窓口で「障害児通所支援受給者証」を申請します。手続きについてもご案内しますので、お持ちでない方もご安心ください。</p></div>
+        <div class="flow-item"><h4>ご契約・利用開始</h4><p>個別支援計画を作成し、ご利用開始となります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>見学・利用のご相談を受付中です</h2>
+    <p>「医療的ケアがあっても大丈夫？」「送迎はうちの学校まで来てくれる？」など、どんなことでもお気軽にどうぞ。</p>
+    <div class="cta-row">
+      <a class="btn btn-kin" href="#contact">見学・利用のご相談</a>
+      <a class="btn btn-frame-white" href="tel:095-848-8530">095-848-8530</a>
+    </div>
+  </div>
+</article>
+
+<!-- ============ 見学・ご相談 ============ -->
+<article class="page" id="contact">
+  <div class="page-hero">
+    <i class="ring pr1"></i><i class="ring pr2"></i>
+    <div class="inner">
+      <div class="label">CONTACT</div>
+      <h1>見学・利用のご相談</h1>
+      <p>開業前の見学予約・利用のご相談・関係機関からのお問い合わせを受付しています。ご本人・ご家族はもちろん、相談支援専門員・学校・医療機関の方もお気軽にどうぞ。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">PREVIEW</div>
+      <h2 class="sec-title">内覧会のご案内</h2>
+      <div class="concept-box">
+        <span class="badge-open">2026年10月中旬 開催予定</span>
+        <p style="margin-top:8px">開業に先立ち、施設をご覧いただける内覧会を予定しています。以後も随時見学を受け付けます。日程の詳細が決まり次第、当サイト・Instagram・LINEでお知らせします。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="inner">
+      <div class="sec-label">HOW TO</div>
+      <h2 class="sec-title">ご相談方法</h2>
+      <div class="act-grid">
+        <div class="act-card">
+          <div class="ic">📞</div><h4>お電話</h4>
+          <p style="text-align:center"><a href="tel:095-848-8530" style="font-size:22px;font-weight:900;text-decoration:none;color:var(--green-deep)">095-848-8530</a><br>
+          <span style="font-size:12px">開業準備中のため出られない場合があります。折り返しご連絡いたします。</span></p>
+        </div>
+        <div class="act-card">
+          <div class="ic">✉️</div><h4>メール</h4>
+          <p style="text-align:center"><a href="mailto:harmony20261201@gmail.com" style="font-weight:700">harmony20261201@gmail.com</a><br>
+          <span style="font-size:12px">お名前・ご連絡先・ご相談内容をご記入ください。</span></p>
+        </div>
+        <div class="act-card">
+          <div class="ic">💬</div><h4>LINE・Instagram</h4>
+          <p style="text-align:center"><span style="font-weight:700;color:var(--kin)">近日開設予定</span><br>
+          <span style="font-size:12px">開設次第こちらでご案内します。</span></p>
+        </div>
+      </div>
+      <p class="center" style="font-size:13px;margin-top:36px">相談フォームは現在準備中です。当面はお電話・メールにてご連絡ください。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">FAQ</div>
+      <h2 class="sec-title">よくあるご質問</h2>
+      <div class="flow">
+        <div class="flow-item noc"><h4>Q. 受給者証をまだ持っていませんが、相談できますか？</h4><p>A. はい、もちろんです。申請の手続きからご案内しますので、お気軽にご相談ください。</p></div>
+        <div class="flow-item noc"><h4>Q. 医療的ケアが必要でも利用できますか？</h4><p>A. 看護師の在籍を予定しており、医療的ケアが必要な方の受け入れを想定しています。必要なケアの内容を個別にお聞かせください。</p></div>
+        <div class="flow-item noc"><h4>Q. 送迎はどこまで来てもらえますか？</h4><p>A. 生活介護・放課後等デイサービスとも、長崎市および近郊（時津町・長与町など）を予定しています。詳しくはご相談ください。</p></div>
+        <div class="flow-item noc"><h4>Q. 開業はいつですか？</h4><p>A. 2026年12月1日の開業を予定しています（現在、指定申請の準備中です）。開業前の見学・利用予約のご相談を受付しています。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>まずは、お気軽にご連絡ください</h2>
+    <p>どんな小さなことでも大丈夫です。一緒に考えるところから始めましょう。</p>
+    <div class="cta-row">
+      <a class="btn btn-kin" href="tel:095-848-8530">095-848-8530 に電話する</a>
+      <a class="btn btn-frame-white" href="mailto:harmony20261201@gmail.com">メールで問い合わせる</a>
+    </div>
+  </div>
+</article>
+
+<!-- ============ 採用情報 ============ -->
+<article class="page" id="recruit">
+  <div class="page-hero">
+    <i class="ring pr1"></i><i class="ring pr2"></i>
+    <div class="inner">
+      <div class="label">RECRUIT</div>
+      <h1>採用情報</h1>
+      <p>2026年12月オープンの新しい事業所を、一緒に立ち上げてくれる仲間を募集しています。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">MESSAGE</div>
+      <h2 class="sec-title">立ち上げから、一緒に。</h2>
+      <div class="concept-box">
+        <span class="badge-open">オープニングスタッフ募集</span>
+        <p class="main-copy" style="font-size:clamp(18px,2.8vw,24px)">「障害があっても、自分の人生を選べる。」<br>その場所を、ゼロからつくる仕事です。</p>
+        <p>利用者さんの「やってみたい」を応援し、工賃活動や地域交流、AIを活用した新しい取り組みにも挑戦していく事業所です。オープニングメンバーとして、活動プログラムや事業所の文化を一緒につくっていきませんか。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="inner">
+      <div class="sec-label">POSITION</div>
+      <h2 class="sec-title">募集予定の職種</h2>
+      <div class="job-list">
+        <div class="job-item"><h4>保育士</h4><p>放課後等デイサービスでの療育・保育。重症心身障害のあるお子さまの発達支援に携わります。</p></div>
+        <div class="job-item"><h4>児童指導員</h4><p>お子さま一人ひとりの個別支援計画に沿った療育・活動支援を行います。</p></div>
+        <div class="job-item"><h4>生活支援員</h4><p>生活介護での日中活動支援。創作活動・作業活動・外出などをサポートします。</p></div>
+        <div class="job-item"><h4>看護師</h4><p>利用者さま・お子さまの健康管理と医療的ケア。福祉の現場で看護の力を活かせます。</p></div>
+        <div class="job-item"><h4>送迎ドライバー</h4><p>ご自宅・学校への送迎。安全運転で利用者さんの毎日を支えます。</p></div>
+      </div>
+      <table class="spec-table" style="max-width:820px;margin:32px auto 0">
+        <tr><th>雇用形態</th><td>正社員／契約社員／パート</td></tr>
+        <tr><th>勤務地</th><td>長崎市滑石エリア（開業予定地。詳細は決定次第お知らせします）</td></tr>
+        <tr><th>勤務開始</th><td>2026年12月の開業に向けて順次（開業準備からの参加も歓迎します）</td></tr>
+        <tr><th>給与・待遇</th><td>詳細はお問い合わせください。面談にてご説明します。</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">ENTRY</div>
+      <h2 class="sec-title">応募方法</h2>
+      <div class="concept-box">
+        <p>お電話またはメールで「採用について」とご連絡ください。まずはカジュアルな面談・見学からでも大歓迎です。</p>
+      </div>
+      <div class="contact-band" style="margin-top:36px">
+        <a class="tel" href="tel:095-848-8530">095-848-8530<small>「採用の件で」とお伝えください</small></a>
+        <div class="cta-row">
+          <a class="btn btn-green" href="mailto:harmony20261201@gmail.com?subject=採用について">メールで応募・問い合わせる</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>働く場所を見てみたい方へ</h2>
+    <p>内覧会（2026年10月中旬予定）や個別見学のご案内も可能です。お気軽にご連絡ください。</p>
+    <div class="cta-row">
+      <a class="btn btn-kin" href="#contact">見学・ご相談はこちら</a>
+    </div>
+  </div>
+</article>
+
+<!-- ============ 会社概要 ============ -->
+<article class="page" id="company">
+  <div class="page-hero">
+    <i class="ring pr1"></i><i class="ring pr2"></i>
+    <div class="inner">
+      <div class="label">COMPANY</div>
+      <h1>会社概要</h1>
+      <p>長崎市で重度障害者の訪問介護を続けてきた株式会社Harmonyが、新しい挑戦を始めます。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">PHILOSOPHY</div>
+      <h2 class="sec-title">私たちの理念</h2>
+      <div class="concept-box">
+        <p class="main-copy">「障害者の方々が本当の自由を<br>実現できる社会を築く」</p>
+        <p>日常生活の支援はもちろん、「恋愛・結婚・一人暮らし」など、夢を叶えるサポートを目指してきました。利用者様・ご家族・スタッフが三位一体となり、心豊かな自立と自由を実現する。その理念を、訪問介護から通所支援へと広げていきます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="inner">
+      <div class="sec-label">PROFILE</div>
+      <h2 class="sec-title">会社概要</h2>
+      <table class="spec-table" style="max-width:820px;margin:0 auto">
+        <tr><th>社名</th><td>株式会社Harmony</td></tr>
+        <tr><th>代表者</th><td>代表取締役　仰木 誠弥／仰木 真樹</td></tr>
+        <tr><th>所在地</th><td>〒852-8061　長崎県長崎市滑石3丁目19番62号</td></tr>
+        <tr><th>事業内容</th><td>
+          ・訪問介護／障害福祉サービス「ヘルパーステーションさとり」（重度障害者の訪問介護）<br>
+          ・生活介護事業（2026年12月開設予定）<br>
+          ・放課後等デイサービス（2026年12月開設予定）
+        </td></tr>
+        <tr><th>関連サイト</th><td><a href="https://harmony.nagasaki.jp/" target="_blank" rel="noopener">ヘルパーステーションさとり 公式サイト</a></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <div class="sec-label">SATORI</div>
+      <h2 class="sec-title">ヘルパーステーションさとり</h2>
+      <div class="concept-box">
+        <p>長崎市で重度障害者の方の訪問介護サービスを提供しています。この訪問介護で培った支援力が、新しい事業所の土台です。日中は通所で、ご自宅では訪問で——切れ目のない支援を法人全体でお届けします。</p>
+        <div class="center mt-40">
+          <a class="btn btn-frame" href="https://harmony.nagasaki.jp/" target="_blank" rel="noopener">さとりの公式サイトを見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>見学・利用のご相談を受付中です</h2>
+    <p>ご本人・ご家族・関係機関の皆さま、お気軽にご連絡ください。</p>
+    <div class="cta-row">
+      <a class="btn btn-kin" href="#contact">見学・利用のご相談</a>
+      <a class="btn btn-frame-white" href="tel:095-848-8530">095-848-8530</a>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <div class="f-inner">
+    <div class="f-logo">株式会社Harmony 新規事業所</div>
+    <div class="f-sub">生活介護・放課後等デイサービス（名称は決定次第発表）</div>
+    <div class="f-nav">
+      <a href="#home">ホーム</a>
+      <a href="#seikatsu">生活介護</a>
+      <a href="#day">放課後等デイサービス</a>
+      <a href="#recruit">採用情報</a>
+      <a href="#company">会社概要</a>
+      <a href="#contact">見学・ご相談</a>
+    </div>
+    <p>運営：株式会社Harmony（長崎市）｜訪問介護 <a href="https://harmony.nagasaki.jp/" target="_blank" rel="noopener">ヘルパーステーションさとり</a></p>
+    <p class="copyright">© 2026 Harmony Inc.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pages=document.querySelectorAll('.page');
+  function show(id){
+    var t=document.getElementById(id)?id:'home';
+    pages.forEach(function(p){p.classList.toggle('active',p.id===t)});
+    document.querySelectorAll('nav a[data-nav]').forEach(function(a){
+      a.classList.toggle('current',a.getAttribute('href')==='#'+t)});
+    var cb=document.getElementById('nav-toggle');if(cb)cb.checked=false;
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1)||'home')});
+  show(location.hash.slice(1)||'home');
+})();
+</script>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var d = document;
+  if(!reduce) d.documentElement.classList.add('js');
+  /* 進捗バー */
+  var pb = d.createElement('div'); pb.className = 'progress'; d.body.appendChild(pb);
+  addEventListener('scroll', function(){
+    var h = d.documentElement;
+    pb.style.width = ((h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)) * 100) + '%';
+  }, {passive:true});
+  if(reduce) return;
+  /* オープニング */
+  var ld = d.getElementById('loader');
+  if(ld){ setTimeout(function(){ ld.classList.add('done'); }, 1700); }
+  /* ヒーロー見出しの一文字分割 */
+  var h1 = d.querySelector('.hero h1');
+  if(h1){
+    var base = 1.15, idx = 0, frag = d.createDocumentFragment();
+    [].slice.call(h1.childNodes).forEach(function(n){
+      if(n.nodeType === 3){
+        n.textContent.split('').forEach(function(c){
+          var s = d.createElement('span'); s.className = 'ch';
+          s.style.animationDelay = (base + idx * 0.05) + 's'; s.textContent = c;
+          frag.appendChild(s); idx++;
+        });
+      } else if(n.nodeName === 'BR'){ frag.appendChild(d.createElement('br')); }
+      else {
+        var em = d.createElement('em');
+        [].slice.call(n.textContent).forEach(function(c){
+          var s = d.createElement('span'); s.className = 'ch';
+          s.style.animationDelay = (base + idx * 0.05) + 's'; s.textContent = c;
+          em.appendChild(s); idx++;
+        });
+        frag.appendChild(em);
+      }
+    });
+    h1.innerHTML = ''; h1.appendChild(frag);
+  }
+  /* スクロール出現 */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  d.querySelectorAll('.svc-card,.val-card,.init-card,.act-card,.flow-item,.trust-box,.access-box,.job-item,.concept-box,.spec-table,.tl-item,.sec-title,.notice,.notice-flat,.contact-band .tel,.badge-open').forEach(function(t){
+    t.classList.add('rv'); io.observe(t);
+  });
+  d.querySelectorAll('.svc-grid,.val-grid,.init-grid,.act-grid,.flow,.timeline').forEach(function(g){
+    [].slice.call(g.children).forEach(function(c,i){ c.style.transitionDelay = (i * 0.09) + 's'; });
+  });
+  /* ヘッダー：下スクロールで隠れ、上で戻る */
+  var lastY = 0, hd = d.querySelector('header');
+  addEventListener('scroll', function(){
+    var y = scrollY;
+    if(y > 160 && y > lastY) hd.classList.add('hid'); else hd.classList.remove('hid');
+    lastY = y;
+  }, {passive:true});
+  /* ヒーロー視差＋金の粒子 */
+  var hero = d.querySelector('.hero');
+  if(hero){
+    hero.addEventListener('mousemove', function(e){
+      var r = hero.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      hero.querySelectorAll('.ring').forEach(function(el, i){
+        el.style.translate = (x * (i+1) * 12) + 'px ' + (y * (i+1) * 9) + 'px';
+      });
+      var g = hero.querySelector('.glow');
+      if(g) g.style.translate = (x * 34) + 'px ' + (y * 26) + 'px';
+    });
+    var cv = d.createElement('canvas'); cv.className = 'dust';
+    hero.insertBefore(cv, hero.firstChild);
+    var ctx = cv.getContext('2d'), P = [];
+    function rs(){ cv.width = hero.offsetWidth; cv.height = hero.offsetHeight; }
+    rs(); addEventListener('resize', rs);
+    for(var i = 0; i < 44; i++) P.push({x:Math.random(), y:Math.random(), r:Math.random()*2+0.6, s:Math.random()*0.9+0.25, o:Math.random()*0.45+0.15, ph:Math.random()*6.28});
+    (function tick(t){
+      ctx.clearRect(0,0,cv.width,cv.height);
+      P.forEach(function(p){
+        p.y -= p.s/900; if(p.y < -0.02) p.y = 1.02;
+        var sway = Math.sin((t||0)/2200 + p.ph) * 9;
+        ctx.beginPath(); ctx.arc(p.x*cv.width + sway, p.y*cv.height, p.r, 0, 6.283);
+        ctx.fillStyle = 'rgba(191,155,74,' + p.o + ')'; ctx.fill();
+      });
+      requestAnimationFrame(tick);
+    })();
+  }
+})();
+</script>
+</body>
+</html>
