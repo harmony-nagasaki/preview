@@ -370,6 +370,14 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;o
   linear-gradient(150deg,#152A1F 0%,#0C1712 100%)}
 
 </style>
+<style id="linebreaks">
+/* ---- 改行制御（文節単位の折り返し）---- */
+.nb{display:inline-block}
+.br-sp{display:none}
+@media(max-width:700px){.br-sp{display:inline}}
+.open-line{flex-wrap:wrap;justify-content:center;text-align:center;row-gap:2px}
+.trust-box .company a{display:inline-block}
+</style>
 </head>
 <body>
 <div class="loader" id="loader" aria-hidden="true">
@@ -400,10 +408,10 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;o
   <div class="hero">
     <i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i><i class="glow"></i>
     <div class="inner">
-      <div class="open-line">2026年12月1日 開設予定｜長崎市滑石エリア</div>
+      <div class="open-line"><span class="nb">2026年12月1日 開設予定｜</span><span class="nb">長崎市滑石エリア</span></div>
       <h1>障害があっても、<br><em>自分の人生</em>を選べる。</h1>
-      <div class="name">株式会社Harmony 新規事業所（名称は決定次第発表）
-        <small>重度障害者の訪問介護「ヘルパーステーションさとり」を運営する株式会社Harmonyが、生活介護と放課後等デイサービスの複合拠点を開設します。</small>
+      <div class="name"><span class="nb">株式会社Harmony 新規事業所</span><br class="br-sp"><span class="nb">（名称は決定次第発表）</span>
+        <small>重度障害者の訪問介護<span class="nb">「ヘルパーステーションさとり」</span>を運営する<span class="nb">株式会社Harmonyが、</span>生活介護と<span class="nb">放課後等デイサービスの</span>複合拠点を開設します。</small>
       </div>
       <div class="cta-row">
         <a class="btn btn-green" href="#contact">見学・利用のご相談（無料）</a>
@@ -412,7 +420,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;o
     </div>
   </div>
 
-  <div class="notice">現在、障害福祉サービス事業所としての指定申請の準備を進めています。掲載内容は準備中の情報であり、変更になる場合があります。事業所名称・所在地の詳細は決定次第お知らせします。</div>
+  <div class="notice">現在、障害福祉サービス事業所としての指定申請の準備を進めています。掲載内容は準備中の情報であり、変更になる場合があります。<span class="nb">事業所名称・所在地の詳細は</span><span class="nb">決定次第お知らせします。</span></div>
 
   
   <div class="marquee" aria-hidden="true"><div class="track">
@@ -439,14 +447,14 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;o
           <span class="tag">生活介護｜18歳以上の方</span>
           <h3>できることを、増やしていく。</h3>
           <p>安心して過ごせる場所であることはもちろん、その先の人生も大切に。「できないこと」を支えるだけではなく、「できること」「挑戦したいこと」を一緒に増やしていく生活介護を目指します。</p>
-          <div class="mini-spec">定員10名｜主に障害支援区分5・6の方｜9:30〜16:30｜送迎あり（長崎市近郊）</div>
+          <div class="mini-spec"><span class="nb">定員10名｜</span><span class="nb">主に障害支援区分5・6の方｜</span><span class="nb">9:30〜16:30｜</span><span class="nb">送迎あり（長崎市近郊）</span></div>
           <a class="more" href="#seikatsu">サービス詳細を見る</a>
         </div>
         <div class="svc-card kids">
           <span class="tag">放課後等デイサービス｜小1〜高3</span>
           <h3>「今」を楽しみ、「将来」につなげる。</h3>
           <p>子どもたちの「今」を楽しみながら、「将来」につながる経験を。自分で考え、自分で選び、自信を持って社会へ羽ばたけるよう、看護師のいる環境で重症心身障害のあるお子さまを支援します。</p>
-          <div class="mini-spec">定員7名｜重症心身障害のあるお子さま｜平日放課後・長期休暇｜送迎あり（長崎市近郊）</div>
+          <div class="mini-spec"><span class="nb">定員7名｜</span><span class="nb">重症心身障害のあるお子さま｜</span><span class="nb">平日放課後・長期休暇｜</span><span class="nb">送迎あり（長崎市近郊）</span></div>
           <a class="more" href="#day">サービス詳細を見る</a>
         </div>
       </div>
@@ -490,7 +498,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;o
         <h2 class="sec-title" style="margin-bottom:24px">運営会社</h2>
         <p class="rinen">「障害者の方々が本当の自由を実現できる社会を築く」</p>
         <p>この理念のもと、長崎市で重度障害者の訪問介護を行ってきた株式会社Harmonyが運営します。</p>
-        <p class="company">株式会社Harmony｜<a href="https://harmony.nagasaki.jp/" target="_blank" rel="noopener">ヘルパーステーションさとり（訪問介護）</a>｜<a href="#company">会社概要</a></p>
+        <p class="company"><span class="nb">株式会社Harmony｜</span><a href="https://harmony.nagasaki.jp/" target="_blank" rel="noopener">ヘルパーステーションさとり（訪問介護）</a>｜<a href="#company">会社概要</a></p>
       </div>
     </div>
   </section>
@@ -915,7 +923,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:150;o
 <footer>
   <div class="f-inner">
     <div class="f-logo">株式会社Harmony 新規事業所</div>
-    <div class="f-sub">生活介護・放課後等デイサービス（名称は決定次第発表）</div>
+    <div class="f-sub"><span class="nb">生活介護・放課後等デイサービス</span><span class="nb">（名称は決定次第発表）</span></div>
     <div class="f-nav">
       <a href="#home">ホーム</a>
       <a href="#seikatsu">生活介護</a>
